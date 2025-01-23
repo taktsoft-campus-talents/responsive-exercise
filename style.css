@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -10,17 +11,18 @@ body {
 }
 
 /* Container Setup (Fixed widths) */
-.header,
+header,
 .nav-bar,
 .content,
-.footer {
+.card_section,
+footer {
   width: 960px;
   margin: 0 auto;
 }
 
 /* Header */
-.header {
-  background-color: #333;
+header {
+  background-color: #0077cc;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -28,7 +30,7 @@ body {
 
 /* Navigation */
 .nav-bar {
-  background-color: #eee;
+  background-color: #c0d3ea;
 }
 
 .nav-bar ul {
@@ -44,14 +46,32 @@ body {
 .nav-bar a {
   text-decoration: none;
   color: #333;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* Content Section */
 .content {
   display: flex;
-  overflow: hidden; /* Contains the floats */
+  overflow: hidden;
   margin-top: 20px;
+}
+
+.card_section h3 {
+  margin: 15px;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  max-width: 300px;
+}
+
+.img_container img {
+  display: block;
+  width: 100%;
 }
 
 .sidebar {
@@ -60,21 +80,22 @@ body {
   padding: 20px;
 }
 
-.main {
+main {
   width: 760px;
   padding: 20px;
   background-color: #fafafa;
 }
 
-.main img {
-  max-width: 600px; /* Fixed size: not fully responsive */
+main img {
+  max-width: 600px;
+  width: 100%;
   height: auto;
 }
 
 /* Footer */
-.footer {
+footer {
   text-align: center;
-  background-color: #ddd;
+  background-color: #c0d3ea;
   padding: 10px;
   margin-top: 20px;
 }
