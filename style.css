@@ -1,13 +1,12 @@
-/* Base Reset / Typography */
+/* Base Reset  */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* Container Setup (Fixed widths) */
